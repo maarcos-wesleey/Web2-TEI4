@@ -7,5 +7,14 @@ const User = db.define('User', {
         type: DataTypes.STRING,
         require: true,
     },
-    email
+    email: {
+        type: DataTypes.STRING,
+        require: true,
+    },
+    senha: {
+        type: DataTypes.STRING,
+        require: true,
+    },
 })
+
+module.exports = User
